@@ -1,0 +1,26 @@
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38 px;
+
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side> div {
+   margin-right: 20px;
+   font-size: 0.9rem;
+   text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom o.5s;
+}
+
+.brand {
+    text-transform: uppercase;
+}
