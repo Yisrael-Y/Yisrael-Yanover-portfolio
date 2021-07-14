@@ -1,7 +1,9 @@
 /* Master styles*/
 body {
-    font-family: "Lato", sans-serif;
+  font-family: 'Brush Script MT', cursive; 
     margin: 0px;
+    background-color: black;
+
   }
   
   .container {
@@ -14,6 +16,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 38px;
+    background-color: rgb(210, 219, 228);
+    border-radius: 5rem;
   }
   
   .left-side {
@@ -58,7 +62,7 @@ body {
   .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: masonry;
+    grid-template-rows: auto;
   }
   
   .portfolio-item-wrapper {
@@ -76,7 +80,10 @@ body {
   .logo-wrapper img {
     width: 100%;
     margin-bottom: 0px;
+    border-radius: 10%;
+
   }
+  
   /*Putting text on top of the images.*/
   .img-text-wrapper {
     position: absolute;
@@ -85,11 +92,30 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: ;
+    height: 350px;
     text-align: center;
+    margin-bottom: 0rem;
+    margin-right: 1rem;
+  }
+  .img-text-wrapper2 {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    text-align: center;
+    margin-top: 6rem;
+    margin-right: 1rem;
   }
   
   .img-text-wrapper .subtitle {
+    position: absolute;
+    transition: 1s;
+    color: transparent;
+  }
+  .img-text-wrapper2 .subtitle {
     position: absolute;
     transition: 1s;
     color: transparent;
@@ -104,15 +130,32 @@ body {
     color: lightseagreen;
     font-weight: 600;
   }
+  .img-text-wrapper2:hover .subtitle {
+    color: lightseagreen;
+    font-weight: 600;
+  }
   
   .img-text-wrapper .subtitle {
     transition: 1s;
     color: transparent;
     font-weight: 600;
   }
+  .img-text-wrapper2 .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+  }
 
   .img-text-wrapper:hover .subtitle {
-    font-weight: 600;
+    font-family: 'Brush Script MT', cursive;    
+    font-weight: 400;
+    font-size: large;
+    color: lightseagreen;
+  }
+  .img-text-wrapper2:hover .subtitle {
+    font-family: 'Brush Script MT', cursive;    font-weight: 600;
+    font-weight: 400;
+    font-size: large;
     color: lightseagreen;
   }
 
@@ -125,17 +168,22 @@ body {
   /*About page styles*/
   .two-column-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;  
   }
   
   .profile-image-wrapper img {
-    width: 100%;
+    width: 50%;
+    border-radius: 10%;
+    margin-top: 1rem;
   }
   
   .profile-content-wrapper {
     padding: 30px;
+    color: lightseagreen; 
+    width: 40%;   
   }
   
   .profile-content-wrapper h1 {
     color: lightseagreen;
   }
+  
